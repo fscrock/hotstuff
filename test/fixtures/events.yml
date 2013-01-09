@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  location: MyString
+  type: 
+  owner: MyString
+  happeningdate: MyString
+  imageurl: MyString
+  keywords: MyString
+  description: MyString
+
+two:
+  title: MyString
+  location: MyString
+  type: 
+  owner: MyString
+  happeningdate: MyString
+  imageurl: MyString
+  keywords: MyString
+  description: MyString

@@ -1,0 +1,653 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-01-06 14:26:42 +0100
+Served asset /rails.png - 200 OK (8ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-01-06 14:28:55 +0100
+Served asset /rails.png - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-06 14:30:13 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/frankscrock/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/frankscrock/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/frankscrock/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/frankscrock/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-06 14:30:39 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Compiled home.css  (12ms)  (pid 15200)
+Compiled application.css  (61ms)  (pid 15200)
+Compiled jquery.js  (2ms)  (pid 15200)
+Compiled jquery_ujs.js  (0ms)  (pid 15200)
+Compiled home.js  (233ms)  (pid 15200)
+Compiled application.js  (322ms)  (pid 15200)
+Completed 200 OK in 503ms (Views: 502.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-06 14:30:40 +0100
+Served asset /application.css - 200 OK (10ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-01-06 14:30:40 +0100
+Served asset /home.css - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-06 14:30:40 +0100
+Served asset /jquery.js - 200 OK (41ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-06 14:30:40 +0100
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-01-06 14:30:40 +0100
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-06 14:30:40 +0100
+Served asset /application.js - 200 OK (10ms)
+  [1m[36m (12.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  SHOW KEYS FROM `schema_migrations`
+  [1m[36m (8.1ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[36m (0.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateEvents (20130106133325)
+  [1m[35m (11.2ms)[0m  CREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `location` varchar(255), `type` varchar(255), `owner` varchar(255), `happeningdate` varchar(255), `imageurl` varchar(255), `keywords` varchar(255), `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130106133325')[0m
+  [1m[35m (0.4ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-06 14:52:48 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Compiled events.css  (8ms)  (pid 15863)
+Compiled scaffolds.css  (25ms)  (pid 15863)
+Compiled application.css  (58ms)  (pid 15863)
+Compiled events.js  (134ms)  (pid 15863)
+Compiled application.js  (152ms)  (pid 15863)
+Completed 200 OK in 357ms (Views: 356.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-06 14:52:50 +0100
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-01-06 14:52:50 +0100
+Served asset /events.css - 200 OK (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-01-06 14:52:50 +0100
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-06 14:52:50 +0100
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-06 14:52:50 +0100
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-06 14:52:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-01-06 14:52:50 +0100
+Served asset /events.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-01-06 14:52:50 +0100
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-06 14:52:50 +0100
+Served asset /application.js - 304 Not Modified (10ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateEvents (20130106133325)
+Migrating to AddCategory (20130106133326)
+  [1m[35m (16.7ms)[0m  ALTER TABLE `events` ADD `category` varchar(255)
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130106133326')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/events" for 127.0.0.1 at 2013-01-06 15:14:08 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+  Rendered events/index.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 175ms (Views: 85.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-06 15:14:08 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-01-06 15:14:08 +0100
+Served asset /events.css - 200 OK (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-01-06 15:14:08 +0100
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-06 15:14:08 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-06 15:14:08 +0100
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-06 15:14:08 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-01-06 15:14:08 +0100
+Served asset /events.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-01-06 15:14:08 +0100
+Served asset /home.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-06 15:14:08 +0100
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 15:14:14 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-06 17:10:23 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /events.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /events.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /events.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-06 17:10:24 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-06 17:10:25 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-06 17:10:25 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-06 17:10:25 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2013-01-06 17:11:06 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+  Rendered events/index.html.erb within layouts/application (48.1ms)
+Completed 200 OK in 125ms (Views: 57.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-06 17:11:06 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-06 17:11:06 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-06 17:11:06 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-06 17:11:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-06 17:11:06 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-01-06 17:11:06 +0100
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-01-06 17:11:06 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 17:13:01 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.5ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.1.102 at 2013-01-06 17:19:08 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.1.102 at 2013-01-06 17:19:09 +0100
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 10.0.1.102 at 2013-01-06 17:19:09 +0100
+Served asset /events.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 10.0.1.102 at 2013-01-06 17:19:09 +0100
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 10.0.1.102 at 2013-01-06 17:19:09 +0100
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.1.102 at 2013-01-06 17:19:09 +0100
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.1.102 at 2013-01-06 17:19:09 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 10.0.1.102 at 2013-01-06 17:19:09 +0100
+Served asset /events.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 10.0.1.102 at 2013-01-06 17:19:09 +0100
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.1.102 at 2013-01-06 17:19:09 +0100
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/events.json" for 10.0.1.118 at 2013-01-06 17:19:33 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 10.0.1.102 at 2013-01-06 17:19:44 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.6ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events.json" for 10.0.1.162 at 2013-01-06 17:19:45 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 10.0.1.114 at 2013-01-06 17:20:13 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.6ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events.json" for 10.0.1.166 at 2013-01-06 17:20:16 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.7ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 17:28:47 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 18:19:47 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-06 18:19:50 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-06 18:19:50 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-01-06 18:19:50 +0100
+Served asset /events.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-01-06 18:19:50 +0100
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-06 18:19:50 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-06 18:19:50 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-06 18:19:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-01-06 18:19:50 +0100
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-01-06 18:19:50 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-06 18:19:50 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 18:36:21 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.5ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 18:42:43 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:11:15 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:12:26 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:13:14 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:21:00 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:21:33 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.6ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:24:35 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:25:36 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.6ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:28:07 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:32:28 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.5ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:33:17 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:34:11 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:34:29 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:36:15 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:37:31 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:43:09 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:44:25 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:44:38 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:47:08 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:47:30 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.5ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:50:36 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:51:24 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:52:31 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:53:36 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.5ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 19:53:57 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:00:45 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.5ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:01:47 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:02:54 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:03:57 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:04:50 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.5ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:06:22 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:08:09 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:16:35 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:16:50 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.5ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:17:00 +0100
+Processing by EventsController#index as JSON
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-01-06 20:18:09 +0100
+Processing by EventsController#index as JSON
+  [1m[35mEvent Load (0.4ms)[0m  SELECT `events`.* FROM `events` 
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.4ms)
